@@ -15,11 +15,14 @@ int main()
         printf("Calculadora!\n\n");
         printf("Insita o primeiro numero: ");
         scanf("%f", &num1);
+        fflush(stdin);
         printf("Insita o segundo numero: ");
         scanf("%f", &num2);
+        fflush(stdin);
     
         printf("Escolha a operação: + - * /\n");
         scanf("%s", &opcao);
+        fflush(stdin);
     
         switch(opcao)
         {
@@ -45,6 +48,7 @@ int main()
         }
         printf("Gostaria de calcular outros números? S/N\n");
         scanf("%s", &resposta);
+        fflush(stdin);
         resposta = tolower(resposta);
         
         if(resposta != 's')
